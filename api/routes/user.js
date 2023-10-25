@@ -5,7 +5,7 @@ const passport = require('passport')
 const User = require('../models/User')
 
 router.get('/demo', function(req, res) {
-  User.register(new User({ username: 'demo' }), 'demo', function() {
+  User.register(new User({ username: 'demo1',password:'demo' }), 'demo', function() {
     res.redirect('/')
   })
 })
